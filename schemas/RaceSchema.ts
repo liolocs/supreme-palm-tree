@@ -21,10 +21,6 @@ export type Runner = typeof Runner.infer;
 
 export const Runners = p.array(Runner).max(3);
 
-// export const raceType = p.string.regex(
-//   /^[TGDJ]$/,
-//   "race_type must be T, G, D or J",
-// );
 export const raceType = p.union("T", "G", "D", "J");
 
 export const Race = p.object({

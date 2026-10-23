@@ -9,17 +9,23 @@ const activeRaceTypes = ref<RaceType[]>([...DEFAULT_RACE_TYPES]);
 
 function restoreActiveRaceTypes(): void {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw === null) return;
+    const rawActiveRaceTypes = localStorage.getItem(STORAGE_KEY);
 
-    const parsed: unknown = JSON.parse(raw);
-    activeRaceTypes.value = Array.isArray(parsed)
-      ? parsed.filter(
-          value =>
-            typeof value === "string" &&
-            (RACE_TYPES as readonly string[]).includes(value),
-        )
-      : [...DEFAULT_RACE_TYPES];
+    if (rawActiveRaceTypes === null) {
+      return;
+    }
+
+    const parsed: unknown = JSON.parse(rawActiveRaceTypes);
+
+    if(Array.isArray(parsed)) {
+      activeRaceTypes.value = parsed.filter(
+        (value): value is RaceType =>
+          typeof value === "string" &&
+          (RACE_TYPES as readonly string[]).includes(value)
+      );
+    } else {
+      activeRaceTypes.value = [...DEFAULT_RACE_TYPES];
+    }
   } catch {
     activeRaceTypes.value = [...DEFAULT_RACE_TYPES];
   }
@@ -34,9 +40,11 @@ function persistActiveRaceTypes(value: RaceType[]): void {
 }
 
 function toggleRaceType(type: RaceType): void {
-  activeRaceTypes.value = activeRaceTypes.value.includes(type)
-    ? activeRaceTypes.value.filter(active => active !== type)
-    : [...activeRaceTypes.value, type];
+  if(activeRaceTypes.value.includes(type)) {
+    activeRaceTypes.value = activeRaceTypes.value.filter(active => active !== type);
+  } else {
+    activeRaceTypes.value = [...activeRaceTypes.value, type];
+  }
 }
 
 watch(activeRaceTypes, persistActiveRaceTypes);
@@ -51,6 +59,7 @@ let restoreRegistered = false;
 export function useActiveRaceTypes() {
   if (!restoreRegistered && getCurrentInstance()) {
     restoreRegistered = true;
+
     onMounted(restoreActiveRaceTypes);
   }
 
