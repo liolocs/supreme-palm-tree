@@ -1,0 +1,22 @@
+{
+  "name": "racebet",
+  "type": "module",
+  "scripts": {
+    "start": "bunx --bun primate",
+    "build": "bunx --bun primate build",
+    "serve": "bunx --bun primate serve",
+    "dev": "bun run start",
+    "seed": "bun scripts/seed.ts"
+  },
+  "dependencies": {
+    "@primate/jsondb": "^0.5.0",
+    "@primate/tailwind": "^0.10.0",
+    "@primate/vue": "^0.21.1",
+    "primate": "^0.42.2",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

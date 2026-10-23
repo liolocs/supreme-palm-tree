@@ -1,0 +1,27 @@
+{
+  "extends": "primate/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "${configDir}",
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    }
+  },
+  "include": [
+    "client",
+    "config",
+    "views",
+    "lib",
+    "components",
+    "routes",
+    "stores",
+    "locales",
+    "templates",
+    "static",
+    "scripts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

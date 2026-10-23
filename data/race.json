@@ -1,0 +1,394 @@
+[
+  {
+    "event": {
+      "title": "Vincennes",
+      "country_code": "FR"
+    },
+    "race_type": "T",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:22:54.692Z"
+    },
+    "num_runners": 18,
+    "distance": 2700,
+    "purse": 700000,
+    "runners": [
+      {
+        "name": "Idao de Tillard",
+        "odds": 2.8,
+        "silk": "fr-idao-de-tillard.png"
+      },
+      {
+        "name": "Hooker Berry",
+        "odds": 4.5,
+        "silk": "fr-hooker-berry.png"
+      },
+      {
+        "name": "Vivid Wise As",
+        "odds": 6,
+        "silk": "fr-vivid-wise-as.png"
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.693Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.693Z"
+    },
+    "id": 0
+  },
+  {
+    "event": {
+      "title": "Solvalla",
+      "country_code": "SE"
+    },
+    "race_type": "T",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:35:54.692Z"
+    },
+    "num_runners": 16,
+    "distance": 1609,
+    "purse": 3000000,
+    "runners": [
+      {
+        "name": "San Moteur",
+        "odds": 3.25,
+        "silk": "se-san-moteur.png"
+      },
+      {
+        "name": "Hail Mary",
+        "odds": 4
+      },
+      {
+        "name": "Önas Prince",
+        "odds": 7.5,
+        "silk": "se-onas-prince.png"
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.695Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.695Z"
+    },
+    "id": 1
+  },
+  {
+    "event": {
+      "title": "Enghien",
+      "country_code": "FR"
+    },
+    "race_type": "T",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:52:54.692Z"
+    },
+    "num_runners": 15,
+    "distance": 2875,
+    "purse": 400000,
+    "runners": [
+      {
+        "name": "Bold Eagle",
+        "odds": 2.4,
+        "silk": "fr-bold-eagle.png"
+      },
+      {
+        "name": "Face Time Bourbon",
+        "odds": 3.1,
+        "silk": "fr-face-time-bourbon.png"
+      },
+      {
+        "name": "Davidson du Pont",
+        "odds": 8
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.695Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.695Z"
+    },
+    "id": 2
+  },
+  {
+    "event": {
+      "title": "ParisLongchamp",
+      "country_code": "FR"
+    },
+    "race_type": "G",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T17:01:54.692Z"
+    },
+    "num_runners": 20,
+    "distance": 2400,
+    "purse": 5000000,
+    "runners": [
+      {
+        "name": "Ace Impact",
+        "odds": 2.75,
+        "silk": "fr-ace-impact.png"
+      },
+      {
+        "name": "Continuous",
+        "odds": 5.5,
+        "silk": "gb-continuous.png"
+      },
+      {
+        "name": "Westover",
+        "odds": 7,
+        "silk": "gb-westover.png"
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.695Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.695Z"
+    },
+    "id": 3
+  },
+  {
+    "event": {
+      "title": "York",
+      "country_code": "GB"
+    },
+    "race_type": "G",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T17:13:54.692Z"
+    },
+    "num_runners": 12,
+    "distance": 2092,
+    "purse": 1000000,
+    "runners": [
+      {
+        "name": "City Of Troy",
+        "odds": 1.9,
+        "silk": "gb-city-of-troy.png"
+      },
+      {
+        "name": "Alflaila",
+        "odds": 6,
+        "silk": "gb-alflaila.png"
+      },
+      {
+        "name": "Feed The Flame",
+        "odds": 9.5
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.696Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.696Z"
+    },
+    "id": 4
+  },
+  {
+    "event": {
+      "title": "Flemington",
+      "country_code": "AU"
+    },
+    "race_type": "G",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T17:26:54.692Z"
+    },
+    "num_runners": 24,
+    "distance": 3200,
+    "purse": 8000000,
+    "runners": [
+      {
+        "name": "Without A Fight",
+        "odds": 4.2,
+        "silk": "au-without-a-fight.png"
+      },
+      {
+        "name": "Soulcombe",
+        "odds": 5,
+        "silk": "gb-soulcombe.png"
+      },
+      {
+        "name": "Sheraz",
+        "odds": 11
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.696Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.696Z"
+    },
+    "id": 5
+  },
+  {
+    "event": {
+      "title": "Cheltenham",
+      "country_code": "GB"
+    },
+    "race_type": "J",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T17:42:54.692Z"
+    },
+    "num_runners": 15,
+    "distance": 5290,
+    "purse": 625000,
+    "runners": [
+      {
+        "name": "Galopin Des Champs",
+        "odds": 2.5,
+        "silk": "gb-galopin-des-champs.png"
+      },
+      {
+        "name": "Gerri Colombe",
+        "odds": 4,
+        "silk": "gb-gerri-colombe.png"
+      },
+      {
+        "name": "Bravemansgame",
+        "odds": 7.5
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.696Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.696Z"
+    },
+    "id": 6
+  },
+  {
+    "event": {
+      "title": "Aintree",
+      "country_code": "GB"
+    },
+    "race_type": "J",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T17:59:54.692Z"
+    },
+    "num_runners": 40,
+    "distance": 6900,
+    "purse": 1000000,
+    "runners": [
+      {
+        "name": "I Am Maximus",
+        "odds": 6,
+        "silk": "gb-i-am-maximus.png"
+      },
+      {
+        "name": "Delta Work",
+        "odds": 9,
+        "silk": "ie-delta-work.png"
+      },
+      {
+        "name": "Minella Indo",
+        "odds": 14
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.697Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.697Z"
+    },
+    "id": 7
+  },
+  {
+    "event": {
+      "title": "Towcester",
+      "country_code": "GB"
+    },
+    "race_type": "D",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T18:14:54.692Z"
+    },
+    "num_runners": 6,
+    "distance": 500,
+    "purse": 175000,
+    "runners": [
+      {
+        "name": "King Memphis",
+        "odds": 2.1,
+        "silk": "gb-king-memphis.png"
+      },
+      {
+        "name": "De Lahdedah",
+        "odds": 4.5,
+        "silk": "ie-de-lahdedah.png"
+      },
+      {
+        "name": "Whyaye Man",
+        "odds": 8
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.697Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.697Z"
+    },
+    "id": 8
+  },
+  {
+    "event": {
+      "title": "Shelbourne Park",
+      "country_code": "IE"
+    },
+    "race_type": "D",
+    "post_time": {
+      "__type": "datetime",
+      "value": "2026-10-23T18:34:54.692Z"
+    },
+    "num_runners": 6,
+    "distance": 550,
+    "purse": 300000,
+    "runners": [
+      {
+        "name": "Bockos Diamond",
+        "odds": 1.75,
+        "silk": "ie-bockos-diamond.png"
+      },
+      {
+        "name": "Born Warrior",
+        "odds": 5,
+        "silk": "ie-born-warrior.png"
+      },
+      {
+        "name": "Ballymac Finn",
+        "odds": 10
+      }
+    ],
+    "updated_at": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.697Z"
+    },
+    "created": {
+      "__type": "datetime",
+      "value": "2026-10-23T16:14:54.697Z"
+    },
+    "id": 9
+  }
+]
