@@ -8,6 +8,7 @@ import Trot from "@/components/race-icons/Trot.vue"
 
 interface Props {
   type: RaceType
+  active: boolean
 }
 
 const props = defineProps<Props>()
@@ -21,5 +22,9 @@ const raceTypeToIcon: Record<RaceType, Component> = {
 </script>
 
 <template>
-  <component :is="raceTypeToIcon[props.type]" class="h-5 w-10"></component>
+  <component
+    :is="raceTypeToIcon[props.type]"
+    class="h-5 w-10"
+    :class="props.active ? 'fill-txt-main' : 'fill-sta-inactive'"
+  ></component>
 </template>

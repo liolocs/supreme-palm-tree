@@ -1,20 +1,28 @@
 <script lang="ts" setup>
-import {type RaceType} from "@/schemas/RaceSchema"
+import { type RaceType } from "@/schemas/RaceSchema"
 import RaceIcon from "@/components/race-icons/Index.vue"
 
 interface Props {
   type: RaceType
-  checked: boolean
+  active: boolean
 }
 
 const props = defineProps<Props>()
+
+const emit = defineEmits<{ toggle: [] }>()
 </script>
 
 <template>
-<label :for="props.type" class="w-[64px] p-4">
-  <RaceIcon :type="props.type"></RaceIcon>
+  <label :for="props.type" class="w-[70px] p-4 hover:cursor-pointer hover:bg-gray-100">
+    <RaceIcon :type="props.type" :active="props.active"></RaceIcon>
 
-  <input :id="props.type" type="checkbox" :checked="props.checked" class="hidden" aria-hidden="true">
-</label>
-
+    <input
+      :id="props.type"
+      type="checkbox"
+      :checked="props.active"
+      class="hidden"
+      aria-hidden="true"
+      @change="emit('toggle')"
+    >
+  </label>
 </template>

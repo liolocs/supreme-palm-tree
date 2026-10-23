@@ -1,14 +1,16 @@
 <script lang="ts" setup>
-import RaceButton from "@/components/race-button/RaceButton.vue";
+import { RACE_TYPE_ORDER } from "@/lib/constants"
+import { useActiveRaceTypes } from "@/lib/useActiveRaceTypes"
+import RaceButton from "@/components/race-button/RaceButton.vue"
 import type { Race } from "@/schemas/RaceSchema";
 
 interface Props {
   races: Race[];
 }
 
-const props = defineProps<Props>();
+defineProps<Props>();
 
-console.log({ race: props.races });
+const { activeRaceTypes, toggleRaceType } = useActiveRaceTypes();
 </script>
 
 <template>
@@ -16,20 +18,11 @@ console.log({ race: props.races });
     <div class="flex justify-center">
       <div class="flex rounded-lg bg-white w-auto">
         <RaceButton
-          type="T"
-          :checked="false"
-        />
-        <RaceButton
-          type="J"
-          :checked="false"
-        />
-        <RaceButton
-          type="G"
-          :checked="false"
-        />
-        <RaceButton
-          type="D"
-          :checked="false"
+          v-for="raceType in RACE_TYPE_ORDER"
+          :key="raceType"
+          :type="raceType"
+          :active="activeRaceTypes.includes(raceType)"
+          @toggle="toggleRaceType(raceType)"
         />
       </div>
     </div>
