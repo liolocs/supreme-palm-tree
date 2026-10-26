@@ -5,7 +5,9 @@ import store from "primate/store";
 
 export default store({
   table: "race",
+
   db,
+
   schema: {
     id: store.key.primary(p.u32),
     event: p.json(Event),
