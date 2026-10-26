@@ -4,6 +4,10 @@ import Race from "@/stores/Race";
 
 export default route({
   async get() {
-    return response.view("Index.vue", {races: await Race.find({sort: {post_time: "desc"}})});
+    const races = await Race.find({
+      sort: { post_time: "desc" },
+    });
+
+    return response.view("Index.vue", { races });
   },
-})
+});
