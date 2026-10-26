@@ -82,7 +82,7 @@ const purseLabel = computed(() => formatPurse(props.race.purse));
           {{ runner.name }}
         </RacebetCardRunnerName>
 
-        <RacebetCardRunnerOdds :odds="runner.odds" />
+        <RacebetCardRunnerOdds :href="betUrl" :odds="runner.odds" />
       </RacebetCardRunner>
     </RacebetCardContent>
   </RacebetCard>
