@@ -2,5 +2,10 @@
 
 @theme {
   --color-txt-main: #1f2937;
+  --color-txt-muted: #4b5563;
   --color-sta-inactive: #9ca3af;
+  --color-race-surface: #333333;
+  --color-race-divider: #e5e5e5;
+  --color-odds-from: #fddfa2;
+  --color-odds-to: #f3a52a;
 }

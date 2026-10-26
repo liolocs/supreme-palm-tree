@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+import { computed } from "vue";
 import { RACE_TYPE_ORDER } from "@/lib/constants"
 import { useActiveRaceTypes } from "@/lib/useActiveRaceTypes"
+import { selectNextRace } from "@/lib/selectNextRace";
 import RaceButton from "@/components/race-button/RaceButton.vue"
 import type { Race } from "@/schemas/RaceSchema";
 import NextRaceCard from "@/components/next-race-card/NextRaceCard.vue";
@@ -16,6 +18,10 @@ console.log({
 });
 
 const { activeRaceTypes, toggleRaceType } = useActiveRaceTypes();
+
+const nextRace = computed(() =>
+  selectNextRace({ races: props.races, activeRaceTypes: activeRaceTypes.value })
+);
 </script>
 
 <template>
@@ -32,7 +38,7 @@ const { activeRaceTypes, toggleRaceType } = useActiveRaceTypes();
       </div>
 
       <div>
-        <NextRaceCard />
+        <NextRaceCard v-if="nextRace" :race="nextRace" />
       </div>
     </div>
   </main>

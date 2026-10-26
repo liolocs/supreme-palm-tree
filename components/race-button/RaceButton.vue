@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { type RaceType } from "@/schemas/RaceSchema"
-import RaceIcon from "@/components/race-icons/Index.vue"
+import RaceIcon from "@/components/icons/race-icons/Index.vue"
 
 interface Props {
   type: RaceType
